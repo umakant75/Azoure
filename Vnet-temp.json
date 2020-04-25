@@ -1,0 +1,17 @@
+{
+  "type": "VirtualNetwork",
+  "settings": [
+    {
+      "name": "vnet-test",
+      "addressPrefixes": [
+        "10.0.0.0/16"
+       ],
+      "subnets": [
+        {
+          "name": "firewall",
+          "addressPrefix": "10.0.1.0/24"
+        }
+      ]
+    } 
+  ]
+}
