@@ -18,6 +18,42 @@
                   "addressPrefix": "10.0.1.0/24"
                 }
               ]
+              "virtualNetworkPeerings": [
+                {
+                  "remoteVirtualNetwork": {
+                  "name": "msft-spoke1-vnet"
+                },
+                "allowForwardedTraffic": true,
+                "allowGatewayTransit": true,
+                "useRemoteGateways": false
+                }
+              ],
+              {
+                "name": "msft-spoke1-vnet",
+                "addressPrefixes": [
+                "10.1.0.0/16"
+                ],
+                "subnets": [
+                  {
+                     "name": "web",
+                     "addressPrefix": "10.1.1.0/24"
+                  }                                
+                ],
+                "virtualNetworkPeerings": [
+                  {
+                  "remoteVirtualNetwork": {
+                  "name": "vnet-test"
+                    },
+                    "allowForwardedTraffic": true,
+                    "allowGatewayTransit": false,
+                    "useRemoteGateways": false
+                  }
+                ],
+                "tags": {
+                "department": "HR",
+                "managedBy": "DevOps"
+                }                            
+              }
             } 
           ]
         }
