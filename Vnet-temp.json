@@ -36,8 +36,12 @@
                   "allowGatewayTransit": true,
                   "useRemoteGateways": false
                   }
-                ]
-            },
+                ],
+                "tags": {
+                "department": "IT",
+                "managedBy": "Admin"
+                }
+             },
  "   #####Vnet -2"
             {
                 "name": "msft-spoke1-vnet",
@@ -62,7 +66,9 @@
                 "department": "HR",
                 "managedBy": "DevOps"
                }
-              },
+              }
+          ]
+        },
         " ####VM-Jump Box "
               {
                 "type": "VirtualMachine",
