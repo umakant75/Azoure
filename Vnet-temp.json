@@ -200,6 +200,48 @@
             ]
         }
 "###"
+"##NSG NetworkSecurityGroup "
+        {
+          "type": "NetworkSecurityGroup",
+          "settings": [
+           {
+             "name": "mgmt-nsg",
+              "securityRules": [
+                {
+                    "name": "RDP"
+                }
+              ],
+              "virtualNetworks": [
+                {
+                    "name": "msft-hub-vnet",
+                    "subnets": [
+                        "mgmt"
+                    ]
+                }
+              ]
+            },
+            {
+              "name": "ad-nsg",
+               "securityRules": [
+                {
+                    "name": "RDP",
+                    "sourceAddressPrefix": "10.0.2.0/24"
+                }
+               ],
+              "virtualNetworks": [
+                {
+                    "name": "msft-hub-vnet",
+                    "subnets": [
+                        "ad"
+                    ]
+                  }
+                ]
+              }
+            ]
+          } 
+
+"###"
+
       ]
     }
   }
