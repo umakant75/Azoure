@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/mspnp/template-building-blocks/master/schemas/buildingBlocks.json",
+  "$schema": "https://github.com/umakant75/Azure/blob/master/Step1-Vnet1.json",
   "contentVersion": "1.0.0.0",
   "parameters" : {
     "buildingBlocks": {
