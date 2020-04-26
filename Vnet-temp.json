@@ -4,7 +4,7 @@
   "parameters" : {
     "buildingBlocks": {
       "value": [
-      #####Vnet -1 
+     " #####Vnet -1 "
         {
           "type": "VirtualNetwork",
            "settings": [
@@ -38,7 +38,7 @@
                   }
                 ]
             },
-    #####Vnet -2
+ "   #####Vnet -2"
             {
                 "name": "msft-spoke1-vnet",
                 "addressPrefixes": ["10.1.0.0/16"],
@@ -63,7 +63,7 @@
                 "managedBy": "DevOps"
                }
               },
-         ####VM-Jump Box
+        " ####VM-Jump Box "
               {
                 "type": "VirtualMachine",
                 "settings": {
@@ -83,8 +83,7 @@
                   }
                 }
               },
-      ####VM - No of Vm 2
-
+  "    ####VM - No of Vm 2 "
               {
                 "type": "VirtualMachine",
                 "settings": {
@@ -103,11 +102,7 @@
               "name": "msft-hub-vnet"
              }
             }
-###
-#           }
-#         ]
-#        }
-####
+"###"
       ]
     }
   }
