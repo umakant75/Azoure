@@ -37,6 +37,12 @@
                   "useRemoteGateways": false
                   }
                 ],
+          "###DNS section "
+                 "dnsServers": [
+                    "10.0.3.4",
+                    "10.0.3.5",
+                    "168.63.129.16"
+                  ],
                 "tags": {
                 "department": "IT",
                 "managedBy": "Admin"
