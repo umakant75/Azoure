@@ -56,7 +56,15 @@
                   {
                      "name": "web",
                      "addressPrefix": "10.1.1.0/24"
-                  }                                
+                  }  
+                  {
+                     "name": "biz",
+                     "addressPrefix": "10.1.2.0/24"
+                  },
+                  {
+                      "name": "sql",
+                      "addressPrefix": "10.1.3.0/24"
+                  }
                 ],
                 "virtualNetworkPeerings": [
                   {
@@ -239,7 +247,7 @@
               }
             ]
           } 
-
+"#### "
 "###"
 
       ]
