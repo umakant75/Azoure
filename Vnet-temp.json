@@ -116,6 +116,90 @@
             }
           }
 "###"
+          {
+            "type": "VirtualMachineExtension",
+            "settings": [
+            {
+              "vms": ["ad-vm1" ],
+              "extensions": [
+                {
+                    "name": "addsc",
+                    "publisher": "Microsoft.Powershell",
+                    "type": "DSC",
+                    "typeHandlerVersion": "2.7",
+                    "autoUpgradeMinorVersion": true,
+                    "settings": {
+                        "configuration": {
+                            "url": "https://github.com/mspnp/template-building-blocks/raw/master/scenarios/tutorials/dsc/adds.zip",
+                            "script":"primary.ps1",
+                            "function": "CreateForest"
+                        }
+                    },
+                        "protectedSettings": {
+                        "configurationArguments": {
+                        "DomainName": "contoso.com",
+                        "DomainNetbiosName": "CONTOSO",
+                        "SiteName": "Azbb-Tutorial-Site",
+                        "OnpremSiteName": "Default-First-Site-Name",
+                        "Cidr": "10.0.0.0/16",
+                        "ReplicationFrequency": 10,
+                        "AdminCreds": {
+                            "UserName": "Admin1234",
+                            "Password": "Admin@123456"
+                          },
+                            "SafeModeAdminCreds": {
+                            "UserName": "safeadminuser",
+                            "Password": "Saf3M0de@PW"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+            },
+            {
+                "type": "VirtualMachineExtension",
+                "settings": [
+                {
+                     "vms": [
+                         "ad-vm2"
+                      ],
+                      "extensions": [
+                    {
+                    "name": "addsc",
+                    "publisher": "Microsoft.Powershell",
+                    "type": "DSC",
+                    "typeHandlerVersion": "2.7",
+                    "autoUpgradeMinorVersion": true,
+                    "settings": {
+                        "configuration": {
+                            "url": "https://github.com/mspnp/template-building-blocks/raw/master/scenarios/tutorials/dsc/adds.zip",
+                            "script":"secondary.ps1",
+                            "function": "CreateDomainController"
+                        }
+                    },
+                        "protectedSettings": {
+                        "configurationArguments": {
+                        "DomainName": "contoso.com",
+                        "DomainNetbiosName": "CONTOSO",
+                        "PrimaryDcIpAddress": "10.0.3.4",
+                        "AdminCreds": {
+                            "UserName": "Admin1234",
+                            "Password": "Admin@123456"
+                        },
+                          "SafeModeAdminCreds": {
+                          "UserName": "safeadminuser",
+                            "Password": "Saf3M0de@PW"
+                        }
+                        }
+                       }
+                    }
+                  ]
+                }
+            ]
+        }
+"###"
       ]
     }
   }
