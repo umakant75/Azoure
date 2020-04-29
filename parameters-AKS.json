@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "myaks"
+        },
+        "location": {
+            "value": "centralus"
+        },
+        "dnsPrefix": {
+            "value": "myaks-dns"
+        },
+        "agentCount": {
+            "value": 2
+        },
+        "agentVMSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "servicePrincipalClientId": {
+            "value": null
+        },
+        "servicePrincipalClientSecret": {
+            "value": null
+        },
+        "kubernetesVersion": {
+            "value": "1.15.10"
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "aadSessionKey": {
+            "value": null
+        },
+        "enableHttpApplicationRouting": {
+            "value": true
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-1bc6543f-f17a-4cd8-bb63-a34d1ffd8f8b-CUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/1bc6543f-f17a-4cd8-bb63-a34d1ffd8f8b/resourceGroups/DefaultResourceGroup-CUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-1bc6543f-f17a-4cd8-bb63-a34d1ffd8f8b-CUS"
+        },
+        "workspaceRegion": {
+            "value": "centralus"
+        },
+        "principalId": {
+            "value": "fb8da190-24ab-4287-a5b8-e0fb9d22c771"
+        }
+    }
+}
