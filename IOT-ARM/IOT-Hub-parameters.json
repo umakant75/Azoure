@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "IotHubs_mytest_iothub_connectionString": {
+            "value": null
+        },
+        "IotHubs_mytest_iothub_containerName": {
+            "value": null
+        },
+        "IotHubs_mytest_iothub_name": {
+            "value": null
+        }
+    }
+}
