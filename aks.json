@@ -57,14 +57,14 @@
        },
        "sshRSAPublicKey": {
            "type": "string",
-           "defaultValue":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDuZdH75553Qi/EX5qqGm/EMz3weej/cIPUeyb80Z0/LZjc+reyMXby3IC+fUcaphpDXoT2kJTQ90CPUVt3Io+8UqDnO2D5vrPSIyy9vn2UX8PVOIcfekCtXCpv07Ur+YqAWtHg5D0V4WfKFaPUHecfPRhyNnjxr9U23q9os5nQJHT6UNQP8UkNO1fj97Q1azEZ5pj9bBjn0qkonqvix7VTgmIKvkpUcwixBGVlrUdxjCM2XBQz3m4tQPCQQtieuje5kEUTl047kXkNqCap0+Q8XtbuVNGSpy9EahwXRFN6mCOWMpcPmFcqUdOi29w4uAkav6mKELev6LRW7RkJWry5 granth@cc-3192c486-654889d56d-nclfw",
+           "defaultValue":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7k6qsf8Tlu06xBHz1BK0T3yPLXjS7uxbQEXkhQNZT1rC7EA4DujkaH9th7MNooFsFh25aKHZoqkcMYNYNNj9ydvyfyGKQb815ptMvpOm257lgfQaMoa+Y6jcr7ggur/1oV7D9yTlD5BvqhG6AQvJLoZDttLmvdwKMO7rDuNiY88LljR5hlIYVqOR0jdqPqzblqA1OHTnoSaC/bXESpyN1tImmLItxeQ2uQHNgz7yxEHdKKgeNtqsUK2Ogccujn37uU76TYWKLhJro5V85S/SR0vTbMXOXhM1sVGYe1u1ENTulJ7UaPFKb8OHM0D6c5w/DpmXshhLlguKPMPD9kjyF umakant@cc-6cc2860c-6bdb48dc84-n7ll7",
            "metadata": {
                "description": "Configure all linux machines with the SSH RSA public key string. Your key should include three parts, for example 'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm'"
            }
        },
        "servicePrincipalClientId": {
            "type": "securestring",
-           "defaultValue":"186a117e-c40c-49f5-8843-f4aca6585405",
+           "defaultValue":"739984cf-c50f-477e-a40f-f8f396e5d026",
            "metadata": {
                "description": "Client ID (used by cloudprovider)"
            },
@@ -74,7 +74,7 @@
                "description": "The Service Principal Client Secret."
            },
            "type": "securestring",
-           "defaultValue":"4595f376-4ca4-4387-b29f-a7ec243979b6"
+           "defaultValue":"8.ocaPkdu~DX9Rrl4dVgF6eY_44vY~LRLY"
        },
        "osType": {
            "type": "string",
